@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="../assets/imgs/code.png" type="image/x-icon">
+    <!-- bootsrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fontawsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <!-- my css for styling -->
+    <link rel="stylesheet" href="../css/project.css">
+</head>
+<body>
+
+    <!-- header -->
+
+    <header>
+        <nav id="navbar">
+            <figure>
+                <img src="../assets/imgs/logo.png" alt="logo" id="logo">
+                <img src="../assets/imgs/purple logo.png" alt="" id="purplelogo">
+            </figure>
+            <ul>
+                <img src="../assets/imgs/logo.png" alt="logo" id="logo-none">
+                <li><a href="../index.html" class="blackA">HOME</a></li>
+                <li><a href="#" class="blackA">PROJECTS</a></li>
+                <li><a href="./services.html" class="blackA">SERVICES</a></li>
+                <li><a href="" class="blackA">BLOG</a></li>
+                <li><a href="./contact.html" class="blackA">CONTACT</a></li>
+            </ul>
+            <div class="button-div">
+                <a href="assets/CV Of Aneeq Ahmed.pdf" download="CV Of Aneeq Ahmed" class="button btn btnAll cv-btn">Download CV</a>
+            </div>
+            <!-- <div class="hamburger-menu">&#9776;</div> -->
+            <div class="hamburger-menu" id="hamburger-menu">&#9776;</div>
+        </nav>
+    </header>
+
+    <!-- dark and light mode btn -->
+
+    <div id="mode" class="mode">
+        <i id="dark" class="fa-solid fa-moon dark" onclick="darkMode()"></i>
+        <i id="light" class="fa-solid fa-sun light" onclick="lightMode()"></i>
+    </div>
+
+    <!-- projects section -->
+    <div class="container">
+        <div class="projects">
+            <h2 class="blackt">Explore my done</h2>
+            <br>
+            <h3 class="large blackt project_btn">Projects</h3>
+            <span><hr class="purplet"></span>
+            <div class="buttons">
+                <button id="bt-1" class="button-value btnAll" onclick="landingPagesShow()">Landing Pages</button>
+                <!-- <button class="button-value">Frontend</button> -->
+                <button id="bt-3" class="button-value btnAll" onclick="functionallityShow()">Functionality</button>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="project-one light_purple">
+                        <h2>Website</h2>
+                        <p>This responsive website is made with html css bootsrap and media queries. This responsive Website is made for learning purpose. This is the responsive clone Website. this responsive website is made by me. i make this responsive website after learning html css bootsrap and media queries for responsiveness.</p>
+                        <img src="../assets/imgs/p website.PNG" alt="p">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-two dark_purple">
+                        <h2>Website of robomeet</h2>
+                        <p>The is a responsive website made by html css and bootsrap. My first responsive website. and this the third assigment of devrtrio. after making this website i learned that how i create a responsive website with html css and bootsrap. </p>
+                        <video src="../assets/videos/robomeet.mp4" controls muted></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- projects section -->
+    <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="project-func left-0 light_purple">
+                        <h2>Quiz App</h2>
+                        <p>The Quiz App is an interactive web application designed to offer users a fun and educational experience by providing quizzes on various topics. Built with HTML, CSS, and JavaScript, this app allows users to test their knowledge and learn new facts.</p>
+                        <video src="../assets/videos/Quiz app.mp4" controls muted></video>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-func dark_purple">
+                        <h2>Timer</h2>
+                        <p>The Timer application serves as a countdown tool for displaying sale durations, new feature launches, and other time-sensitive events. With an intuitive interface, Ideal for marketing campaigns, product releases, and promotional events, this Timer ensures a dynamic and engaging way to showcase limited-time offers and announcements. </p>
+                        <video src="../assets/videos/Timer.mkv" controls muted></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- projects 4 5 -->
+    <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="project-func left-0 light_purple">
+                        <h2>ToDo List</h2>
+                        <p>This project is a simple Todo List web application built using HTML, CSS, and JavaScript. The application allows users to create, edit, and delete tasks to help manage their daily activities.</p>
+                        <video src="../assets/videos/ToDo List (2).mp4" controls muted></video>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-func dark_purple">
+                        <h2>Currency Convertor</h2>
+                        <p>The Currency Converter project enables seamless conversion between Pakistani Rupees (PKR) and United States Dollars (USD). Users input the desired amount in either currency, instantly obtaining accurate conversion results. This user-friendly tool simplifies international transactions and exchange rate tracking. </p>
+                        <video src="../assets/videos/CurrencyConvertor.mp4" controls muted></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="phone-number">
+                    <div>
+                        <i class="fa-solid fa-mobile-screen mobile"></i>
+                    </div>
+                    <div>
+                        <h4 class="contact">Contact (WhatsApp)</h4> 
+                        <p class="number">+92 304 0076889</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-6">
+                   <div class="phone-number">
+                      <div>
+                        <i class="fa-solid fa-envelope mobile"></i>
+                      </div>
+                      <div>
+                        <h4 class="contact">Email</h4> 
+                        <p class="number">codewithaneeq@gmail.com</p>
+                      </div>
+                   </div>
+                </div>
+                <hr>
+              </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="about-company">CodeAneeq.com <i>Building Awesome Websites</i> : We're your go-to team for top-notch frontend development. We make websites look great and work smoothly. Let's create something amazing together! Designing digital magic that captivates and converts. Your vision, our expertise - let's make your website shine!</p>
+              <img src="../assets/imgs/logo.png" alt="logo">
+            </div>
+            <div class="col-lg-3 col-6">
+              <h6 class="categories">Categories</h6>
+              <div class="footer-nav">
+               <a href="../index.html"><i class="fa-solid fa-house"> &nbsp; &nbsp;Home</i></a> 
+               <a href="#"><i class="fa-solid fa-code"> &nbsp; &nbsp;Projects</i></a> 
+               <a href="./services.html"><i class="fa-solid fa-desktop"> &nbsp; &nbsp;Services</i></a>
+               <a href=""><i class="fa-solid fa-newspaper"> &nbsp; &nbsp;Blog</i></a>
+               <a href="./contact.html"><i class="fa-solid fa-file-signature"> &nbsp; &nbsp;Contact</i></a>
+            </div>
+            </div>
+            <div class="col-lg-3 col-12">
+              <h6 class="follow-us">Follow Us on Social</h6>
+              <div class="social-media-icons">
+                <div class="first-icons">
+                <div class="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="github">
+                    <a href="https://github.com/CodeAneeq"><i class="fa-brands fa-github"></i></a> 
+                </div>
+                <div class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div class="second-icons">
+                <div class="quora">
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+                <div class="quora">
+                    <a href="https://www.linkedin.com/in/code-with-aneeq/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="quora">
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+                <div class="quora">
+                    <i class="fa-brands fa-quora"></i>
+                </div>
+            </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <p class="last">Copyright &#169; 2024, All Right Reserved <a href="#" class="p">CodeAneeq</a></p>
+          <br>
+        </div>
+    </footer>
+
+ 
+    <script src="../Javascript/project.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
