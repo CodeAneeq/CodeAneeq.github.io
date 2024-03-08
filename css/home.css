@@ -350,7 +350,7 @@ ul li a:hover::after {
 .profile-img {
   width: 407px;
   height: 450px;
-  background-color: white;
+  background-color: transparent;
   margin-top: 180px;
   margin-left: 140px;
   border-radius: 20px;
