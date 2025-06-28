@@ -122,67 +122,29 @@ const Projects = () => {
     // },
   ];
 
- const mernProject = [
-  {
-    projectName: "CodeMart",
-    projectDesc:
-      "A modern MERN stack e-commerce web app designed for developers, offering an extensive range of coding tools, software, and tech gadgets. It features a sleek, responsive UI, JWT-based authentication, and REST APIs for seamless backend operations.",
-    project_languages: [
-      "JavaScript",
-      "CSS",
-      "React",
-      "Bootstrap",
-      "SCSS",
-      "Redux",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "JWT",
-      "REST APIs",
-    ],
-    url: "https://codemart.netlify.app/",
-    img: CodeMart,
-  },
-  {
-    projectName: "CareerHunt",
-    projectDesc:
-      "CareerHunt is a full-stack MERN job portal featuring a clean UI, real-time job listings, user authentication, and smooth navigation. The platform allows developers and recruiters to easily post and apply for jobs.",
-    project_languages: [
-      "JavaScript",
-      "CSS",
-      "React",
-      "Bootstrap",
-      "SCSS",
-      "Redux",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "JWT",
-      "REST APIs",
-    ],
-    url: "https://careeerhunt.netlify.app/",
-    img: careerhunt,
-  },
-  {
-    projectName: "LearnCodeSkills",
-    projectDesc:
-      "LearnCodeSkills is a MERN stack Learning Management System (LMS) featuring video lectures, progress tracking, user authentication, and a clean, responsive UI. It’s built for students and instructors to learn and teach effectively.",
-    project_languages: [
-      "JavaScript",
-      "CSS",
-      "React",
-      "Bootstrap",
-      "SCSS",
-      "Redux",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "JWT",
-      "REST APIs",
-    ],
-    img: LearnCodeSkills,
-  },
-];
+  const mernProject = [
+     {
+      projectName: "CodeMart",
+      projectDesc: "A modern MERN stack e-commerce web app designed for developers, offering an extensive range of coding tools, software, and tech gadgets. It features a sleek, responsive UI, JWT-based authentication, and REST APIs for seamless backend operations.",
+      project_languages: ["JavaScript", "CSS", "React", "Bootstrap", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"],
+      url: "https://github.com/CodeAneeq/Codemart-frontend",
+      img: CodeMart,
+    },
+     {
+      projectName: "CareerHunt",
+      projectDesc: "CareerHunt is a full-stack MERN job portal featuring a clean UI, real-time job listings, user authentication, and smooth navigation. The platform allows developers and recruiters to easily post and apply for jobs.",
+      project_languages: ["JavaScript", "CSS", "React", "Bootstrap", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"],
+      url: "https://github.com/CodeAneeq/Careerhunt-client",
+      img: careerhunt,
+    },
+     {
+      projectName: "LearnCodeSkills",
+      projectDesc: "LearnCodeSkills is a MERN stack Learning Management System (LMS) featuring video lectures, progress tracking, user authentication, and a clean, responsive UI. It’s built for students and instructors to learn and teach effectively.",
+      project_languages: ["JavaScript", "CSS", "React", "Bootstrap", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"],
+      img: LearnCodeSkills,
+      url: "https://github.com/CodeAneeq/learncodeskills-frontend"
+    },
+  ];
 
   const [activeCategory, setActiveCategory] = useState("Landing Page");
 
