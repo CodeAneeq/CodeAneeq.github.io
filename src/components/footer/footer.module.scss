@@ -1,0 +1,117 @@
+@import '../../theme.scss';
+
+.footer_container {
+  width: 100%;
+  // height: 500px !important;
+  // margin-top: 100px;
+  padding-top: 70px;
+  background-color: var(--sectionBg);
+  
+  .footer_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .footer_para {
+      margin-top: 30px;
+      font-size: 20px;
+      width: 54%;
+      color: var(--paragraph);
+      text-align: center;
+      
+      @media (max-width: 786px) {
+        width: 100%;
+      }
+
+      @media (max-width: 430px) {
+        font-size: 16px;
+      }
+    }
+    
+    .headings {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      
+      > h2 {
+        color: var(--btnBg);
+        font-size: 36px;
+        
+        .right {
+          margin-right: 20px;
+          color: var(--paragraph);
+          
+          @media (max-width: 430px) {
+            margin-right: 10px;
+          }
+        }
+
+        .left {
+          color: var(--paragraph);
+          margin-left: 20px;
+          cursor: pointer;
+
+          @media (max-width: 430px) {
+            margin-left: 10px;
+          }
+        }
+
+        @media (max-width: 786px) {
+          font-size: 25px;
+        }
+        @media (max-width: 430px) {
+          font-size: 20px;
+        }
+        @media (max-width: 330px) {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .icons {
+      padding-left: 0;
+      margin-top: 30px;
+      font-size: 25px;
+      display: flex;
+      gap: 20px;
+      justify-content: start;
+      list-style-type: none;
+
+      .instagram {
+        &:hover {
+          color: #D62976 !important;
+        }
+      }
+      .linkedin {
+        &:hover {
+          color: blue !important;
+        }
+      }
+      .github {
+        &:hover {
+          color: var(--dark) !important;
+        }
+      }
+      
+      > li {
+        :hover {
+          cursor: pointer;
+          color: var(--dark);
+        }
+      }
+    }
+  }
+  
+  .last {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    // background-color: var(--white);
+    font-size: 13px;
+    color: var(--paragraph);
+    background-color: var(--sectionBg);
+  }
+}

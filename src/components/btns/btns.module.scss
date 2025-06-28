@@ -1,0 +1,22 @@
+@import '../../theme.scss';
+
+.btn {
+  height: 100%;
+  width: 95%;
+  border-radius: 15px;
+  color: var(--white);
+  outline: none;
+  font-size: 16px;
+  border: none;
+  // color: var(--btnBg);
+  padding: 6px 16px;
+  background-color: var(--btnBg);
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+
+  &:hover {
+    color: var(--btnBg) !important;
+    background-color: transparent;
+    border: 1px solid var(--btnBg);
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../theme.scss';
+
+.category_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: auto;
+
+  .category_name_div {
+    width: auto;
+    height: 30px;
+    padding: 3px 15px;
+    color: var(--paragraph);
+    border-radius: 20px;
+    background-color: var(--symbolBg);
+    text-align: center;
+  }
+}

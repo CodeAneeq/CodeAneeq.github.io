@@ -1,0 +1,53 @@
+@import '../../theme.scss';
+
+.about_me_container {
+  display: flex;
+  gap: 20px;
+  // background-color: red;
+
+  .aneeq_figure {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    > img {
+      width: 65%;
+
+      @media (max-width: 430px) {
+        width: 80%;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  .about_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+    > h3 {
+      margin-bottom: 20px;
+      color: var(--heading); // ✅ Heading color dynamic
+    }
+
+    > p {
+      color: var(--paragraph); // ✅ Paragraph color dynamic
+    }
+
+    @media (max-width: 1000px) {
+      margin-top: 50px;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+}

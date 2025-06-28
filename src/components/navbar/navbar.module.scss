@@ -1,0 +1,129 @@
+@import '../../theme.scss';
+
+.navbar_container {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  color: var(--paragraph);
+  gap: 50px;
+
+  > figure {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+
+    > img {
+      height: 60px;
+
+      @media (max-width: 900px) {
+        height: 40px;
+      }
+    }
+  }
+
+  .list_container {
+    position: relative;
+    display: flex;
+    width: 55%;
+    font-weight: 500;
+    list-style-type: none;
+    gap: 30px;
+    align-items: center;
+    justify-content: end;
+    font-family: 'Inter';
+    font-size: 16px;
+
+    > div {
+      width: 150px;
+    }
+
+    @media (max-width: 1400px) {
+      width: 65%;
+    }
+
+    @media (max-width: 1352px) {
+      width: 80%;
+      font-size: 20px;
+    }
+
+    @media (max-width: 1200px) {
+      font-size: 13px;
+    }
+
+    @media (max-width: 995px) {
+      padding-left: 0;
+      width: 100%;
+      gap: 10px;
+      font-size: 10px;
+    }
+
+    :hover {
+      color: var(--btnBg) ;
+      transition: 0.3s all ease-in-out;
+      cursor: pointer;
+    }
+
+    .btn_div {
+      display: flex;
+      width: 100%;
+      gap: 30px;
+      align-items: center;
+
+      .moon{
+        color: white !important;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: var(--paragraph);
+      margin: 4px 0;
+      transition: 0.4s;
+    }
+
+    &.open .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    &.open .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    &.open .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+
+  @media (max-width: 900px) {
+    align-items: center;
+    justify-content: space-between;
+
+    .list_container {
+      display: none;
+    }
+
+    .hamburger {
+      display: flex;
+      justify-content: end;
+      width: 10%;
+    }
+  }
+}

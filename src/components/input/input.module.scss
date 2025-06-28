@@ -1,0 +1,45 @@
+@import '../../theme.scss';
+
+.input_container {
+  width: 100%;
+  height: 40px;
+  // border: 2px solid #E6ECF8;
+  border: 2px solid var(--symbolBg);
+  border-radius: 7px;
+  // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
+  color: var(--dark);
+  padding: 4px 20px;
+  display: flex;
+
+  > span {
+    color: var(--heading);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  > input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    height: 100%;
+    color: var(--paragraph);
+  }
+}
+
+.project_input {
+  width: 100%;
+  padding: 20px;
+  text-align: start;
+  height: 200px;
+ border: 2px solid var(--symbolBg);
+  border-radius: 7px;
+  color: var(--paragraph);
+  outline: none;
+  background-color: transparent;
+  resize: none;
+  overflow: auto;
+  font-size: 16px;
+}

@@ -1,0 +1,51 @@
+@import '../../theme.scss';
+
+/* Swiper container styling */
+.swiper {
+    width: 100%;
+    height: 550px; /* Default height */
+    position: relative; /* Ensure proper positioning for children */
+    overflow: hidden;
+  }
+  
+  /* Swiper slide styling */
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--page-bg);
+  
+    /* Center slide content vertically */
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    /* align-items: center; */
+  }
+  
+  /* Pagination styling */
+  .swiper-pagination {
+    position: absolute;
+    bottom: 10px; /* Position bullets below the slides */
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10; /* Ensure bullets are above other elements */
+  }
+  
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: var(--paragraph);
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 5px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    color: var(--paragraph);
+    background: var(--swiperBtnBg);
+  }
+
+  

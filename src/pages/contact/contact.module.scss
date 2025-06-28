@@ -1,0 +1,125 @@
+@import '../../theme.scss';
+
+.contact_page_container{
+    margin-bottom: 60px;
+
+    .contact_headin{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        color: var(--paragraph);
+    }
+
+    .contact_content{
+        margin-top: 50px;
+        display: flex;
+        gap: 50px;
+        align-items: center;
+flex-direction: column;
+.avatar_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+
+  >div{
+    width: 60%;
+    text-align: center;
+    >h1{
+      color: var(--heading);
+      font-size: 3rem !important;
+
+       @media (max-width: 750px) {
+      font-size: 2rem !important;
+    }
+       @media (max-width: 380px) {
+      font-size: 1.5rem !important;
+    }
+    }
+
+    @media (max-width: 1215px) {
+      width: 60%;
+    }
+    @media (max-width: 995px) {
+      width: 90%;
+    }
+    @media (max-width: 750px) {
+      width: 100%;
+    }
+  }
+  // margin-bottom: 15px;
+  .avatar_img {
+    width: 90px;
+    height: 80px;
+  }
+}
+
+
+        // .contact_vector{
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: start;
+
+        //     >img{
+        //         // width: 50%;
+        //         // width: 400px;
+        //         height: 400px;
+
+        //         @media (max-width: 1000px) {
+        //             width: 300px;
+        //             height: 300px;
+        //         }
+        //     }
+        // }
+        
+        .contact_inputs_div{
+            display: flex;
+            color: var(--paragraph);
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            width: 50%;
+          margin-bottom: 60px;
+
+          @media (max-width: 1000px) {
+            width: 70%;
+          }
+
+          >p{
+            text-align: center;
+          }
+           .input_one{
+            display: flex;
+            gap: 30px;
+
+            @media (max-width: 550px) {
+              flex-direction: column;
+            }
+           }
+            
+            @media (max-width: 900px) {
+                width: 100%;
+                gap: 30px;
+            }
+            
+            .btns{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+                .btn_div{
+                    width: 50%;
+
+                    @media (max-width: 420px) {
+                      width: 70%;
+                    }
+                }
+            }
+        }
+        
+
+        // @media (max-width: 900px) {
+        //     flex-direction: column-reverse;
+        // }
+    }
+}

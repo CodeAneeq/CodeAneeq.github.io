@@ -1,0 +1,32 @@
+.testonimal_container{
+    width: 100%;
+    height: 300px;
+    // margin-top: 20px;
+
+    .pic{
+        margin-bottom: 50px;
+    }
+
+    .content_test{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--paragraph);
+
+        >p{
+            width: 50%;
+
+            @media (max-width: 800px) {
+                width: 100%;
+            }
+        }
+
+        .person{
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    }
+}
