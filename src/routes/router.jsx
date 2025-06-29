@@ -1,44 +1,8 @@
 // import { createBrowserRouter } from "react-router-dom";
-// import Home from "../pages/home/Home";
-// import Projects from "../pages/projects/Projects";
-// import Services from "../pages/services/Services";
-// import Blogs from "../pages/blog/Blogs";
-// import Error from "../pages/error/Error";
-// import Contact from "../pages/contact/Contact";
-
-// const publicRoutes = createBrowserRouter([
-//   {
-//     path: '/',
-//     element: <Home/>
-//   },
-//   {
-//     path: '/projects',
-//     element: <Projects/>
-//   },
-//   {
-//     path: '/services',
-//     element: <Services/>
-//   },
-//   {
-//     path: '/blog/:title',
-//     element: <Blogs/>
-//   },
-//   {
-//     path: '/contact',
-//     element: <Contact/>
-//   },
-//   {
-//     path: "*",
-//     element: <Error/>
-//   }
-// ])
-
-// export default publicRoutes
-
-import { createBrowserRouter } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Loader from "../components/loader/loader";
 import About from "../pages/about/about";
+import { createHashRouter } from "react-router-dom";
 
 const HomePage = lazy(() => import("../pages/home/Home"));
 const ProjectsPage = lazy(() => import("../pages/projects/Projects"));
@@ -47,7 +11,7 @@ const BlogsPage = lazy(() => import("../pages/blog/Blogs"));
 const ContactPage = lazy(() => import("../pages/contact/Contact"));
 const ErrorPage = lazy(() => import("../pages/error/Error"));
 
-const publicRoutes = createBrowserRouter([
+const publicRoutes = createHashRouter([
   {
     path: "/",
     element: (
