@@ -57,8 +57,8 @@ const Contact = () => {
       .then(
         (response) => {
           console.log("Email sent successfully!", response);
-          setShow(true)
           setTxt("Message Sent Successfully");
+          setShow(true)
           setName("");
           setEmail("");
           setSubject("");
@@ -67,8 +67,8 @@ const Contact = () => {
         },
         (error) => {
           console.error("Email sending failed ❌", error);
-          setShow(true)
           setTxt("Failed to send message");
+          setShow(true)
           setLoading(false);
         }
       );
