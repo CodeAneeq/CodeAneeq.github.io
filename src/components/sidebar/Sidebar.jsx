@@ -38,7 +38,7 @@ const Sidebar = () => {
           <div className={styles.nav_link_container}>
             <ul>
             <NavLink to='/' className={`${styles.li}`}>
-          <li>HOME</li>
+          <li>Home</li>
          </NavLink>
         <NavLink to='/projects' className={`${styles.li}`}>
           <li>Projects</li>

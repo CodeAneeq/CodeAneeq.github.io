@@ -4,7 +4,7 @@ import BasicLayout from "../../components/layout/basicLayout";
 import styles from "./home.module.scss";
 import CategoryName from "../../components/category/CategoryName";
 import SkillCard from "../../components/cards/skillCard";
-import careerhunt from '../../assets/img/landingPage/careerhunt.png'
+import codeMart from '../../assets/img/CodeMart.jpg'
 
 import Js from "../../assets/img/JS.svg";
 import NodeJs from "../../assets/img/NodeJs.svg";
@@ -22,12 +22,10 @@ import Elementor from "../../assets/img/Elementor.png";
 import WooCommerce from "../../assets/img/Woo.png";
 import Tailwand from "../../assets/img/Tailwand.svg";
 import Figma from "../../assets/img/Figma.webp";
-import { FaLaptop } from "react-icons/fa6";
 import Service from "../../components/servicesComponent/Service";
 import PrimaryBtn from "../../components/btns/primaryBtn";
 import ProjectCard from "../../components/cards/projectCard";
 
-import img from "../../assets/img/Wingie.webp";
 import AboutMe from "../../components/aboutme/AboutMe";
 import TestonimalSlider from "../../components/testonimals/TestonimalSlider";
 import { Link } from "react-router-dom";
@@ -158,13 +156,15 @@ const Home = () => {
                 <ProjectCard
 
                   className={styles.rev}
-                  projectName={"CareerHunt"}
+                  projectName={"CodeMart"}
                   projectDesc={
-                    "CareerHunt is a modern job portal with a clean UI, real-time job listings, and smooth navigation. Built for developers to search and post jobs easily."
+                    "A modern MERN stack e-commerce web app offering a wide range of mobile phones, headphones, and tech gadgets. Features include a sleek, responsive UI, JWT-based authentication, and REST APIs for smooth backend operations."
                   }
                   language={["JavaScript", "CSS", "React", "Bootstrap", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"]}
-                  url={"https://careeerhunt.netlify.app/"}
-                  img={careerhunt}
+                  url={"https://github.com/CodeAneeq/Codemart-frontend"}
+                  demoURL={"https://www.linkedin.com/posts/codeaneeq_mernstack-ecommerceapp-fullstackdeveloper-activity-7333486797496201216-5Z4H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ"}
+                  isDemo={true}
+                  img={codeMart}
                 />
                 {/* Repeat ProjectCard as needed */}
                 <div className={`${styles.btn_Div}`}>

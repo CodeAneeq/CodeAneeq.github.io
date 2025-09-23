@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './cards.module.scss'
-import img from '../../assets/img/Wingie.webp'
 import CategoryName from '../category/CategoryName'
 import { FiExternalLink } from "react-icons/fi";
+import { FiPlay } from "react-icons/fi"; // Play icon for demo button
 
 const ProjectCard = (props) => {
   return (
@@ -18,11 +18,20 @@ const ProjectCard = (props) => {
               ))}
             </div>
 
-            <div className={`${styles.link}`}>
-            <a href={props.url} target='_blank' >
-              <FiExternalLink/>
-            </a>
+            <div className={`${styles.link_buttons}`}>
+              {/* Original External Link */}
+              <a href={props.url} target='_blank' className={`${styles.icon_link}`}>
+                <FiExternalLink/>
+              </a>
 
+              {/* Watch Demo Button */}
+              {
+                props.isDemo ? <a href={props.demoURL} target='_blank' className={`${styles.watch_demo_btn}`}>
+                <FiPlay style={{ marginRight: '5px' }}/>
+                Watch Demo
+              </a> : <></>
+              }
+              
             </div>
           </div>
         </div>

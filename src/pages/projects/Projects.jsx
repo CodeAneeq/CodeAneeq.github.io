@@ -2,36 +2,24 @@ import React, { useEffect, useState } from "react";
 import BasicLayout from "../../components/layout/basicLayout";
 import CategoryName from "../../components/category/CategoryName";
 import styles from "./projects.module.scss";
-import Foodi from '../../assets/img/landingPage/Foodi.png';
-import RoboMeet from '../../assets/img/landingPage/RoboMeet.png';
-import Picodi from '../../assets/img/landingPage/Picodi.png';
 import ProjectCard from "../../components/cards/projectCard";
 import BookHeaven from '../../assets/img/frontendImg/BookHeaven.jpg';
 import binaryChemist from '../../assets/img/landingPage/binaryChemist.png'
 import Todo from '../../assets/img/functionallity/Todo.png';
 import Weather from '../../assets/img/frontendImg/weather.jpg';
 import Expense from '../../assets/img/functionallity/Expense.png';
-import AgeCal from '../../assets/img/functionallity/AgeCal.png';
 import careerhunt from '../../assets/img/landingPage/careerhunt.png'
-import PasswordStrength from '../../assets/img/functionallity/Password.png';
 import Quiz from '../../assets/img/functionallity/Quiz.png';
 import Notes from '../../assets/img/functionallity/Notes.png';
-import Pomodoro from '../../assets/img/functionallity/Pomodoro.png';
 import LearnCodeSkills from '../../assets/img/LearnCodeSkills.png'
 import CodeMart from '../../assets/img/CodeMart.jpg'
+import OrbitCRM from '../../assets/img/orbitcrm.png'
+import SnapBasket from '../../assets/img/snapBaskett.png'
 
 import { motion } from "framer-motion"; // Import motion from framer-motion
 
 const Projects = () => {
   const landingPage = [
-    // {
-    //   projectName: "Foodi",
-    //   projectDesc: "Foodi is a modern landing page for food enthusiasts, offering delicious recipes and meal ideas. Perfect for promoting your food brand.",
-    //   project_languages: ["HTML", "CSS", "JavaScript", "Bootstrap", "SCSS"],
-    //   url: 'https://foodi-landing-page.netlify.app/',
-    //   img: Foodi,
-    // },
-   
      {
       projectName: "Binary Chemist",
       projectDesc: "A responsive and modern React landing page featuring Home, FAQ, and Contact sections. It integrates a real-time weather API to display current weather data for any searched location, enhancing user engagement with dynamic and useful content..",
@@ -39,19 +27,6 @@ const Projects = () => {
       url: 'https://binarychemist-bycodeaneeq.netlify.app/',
       img: binaryChemist,
     },
-    //  {
-    //   projectName: "RoboMeet",
-    //   projectDesc: "Robomeet is a modern landing page for simple website, made with HTML, CSS, Bootstrap and JS. This is my fist project using html and css",
-    //   project_languages: ["HTML", "CSS", "JavaScript", "Bootstrap", "SCSS"],
-    //   url: 'https://robomeetbycodeaneeq.netlify.app/',
-    //   img: RoboMeet,
-    // },
-    // {
-    //   projectName: "Picodi",
-    //   projectDesc: "Picodi is a creative landing page. It is my first Landing page. I made this for practice bootstrap.",
-    //   project_languages: ["HTML", "CSS", "JavaScript", "Bootstrap", "SCSS"],
-    //   img: Picodi,
-    // },
   ];
 
   const frontendProject = [
@@ -85,20 +60,6 @@ const Projects = () => {
       url: "https://expensetracker-bycodeaneeq.netlify.app/",
       img: Expense,
     },
-    // {
-    //   projectName: "Age Calculator",
-    //   projectDesc: "A simple app that calculates the user's age based on the given birthdate.",
-    //   project_languages: ["HTML", "CSS", "JavaScript", "Bootstrap", "SCSS", "React"],
-    //   url: "https://agecalculator-bycodeaneeq.netlify.app/",
-    //   img: AgeCal,
-    // },
-    // {
-    //   projectName: "Password Strength Checker",
-    //   projectDesc: "An app that checks the strength of a password and gives feedback on how to improve it.",
-    //   project_languages: ["HTML", "CSS", "JavaScript", "Bootstrap", "SCSS", "React"],
-    //   url: "https://password-strength-checker-codeaneeq.netlify.app/",
-    //   img: PasswordStrength,
-    // },
     {
       projectName: "Quiz App",
       projectDesc: "A quiz application that lets users take a quiz, tracks their score, and displays results.",
@@ -113,22 +74,32 @@ const Projects = () => {
       url: "https://notes-app-by-codeaneeq.netlify.app/",
       img: Notes,
     },
-    // {
-    //   projectName: "Pomodoro",
-    //   projectDesc: "A productivity timer app based on the Pomodoro Technique to manage work and break sessions.",
-    //   project_languages: ["HTML", "CSS", "JavaScript", "Bootstrap", "SCSS", "React"],
-    //   url: "https://pomodoro-time-bycodeaneeq.netlify.app/",
-    //   img: Pomodoro,
-    // },
   ];
 
   const mernProject = [
      {
       projectName: "CodeMart",
-      projectDesc: "A modern MERN stack e-commerce web app designed for developers, offering an extensive range of coding tools, software, and tech gadgets. It features a sleek, responsive UI, JWT-based authentication, and REST APIs for seamless backend operations.",
+      projectDesc: "A modern MERN stack e-commerce web app offering a wide range of mobile phones, headphones, and tech gadgets. Features include a sleek, responsive UI, JWT-based authentication, and REST APIs for smooth backend operations.",
       project_languages: ["JavaScript", "CSS", "React", "Bootstrap", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"],
       url: "https://github.com/CodeAneeq/Codemart-frontend",
       img: CodeMart,
+      demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-ecommerceapp-fullstackdeveloper-activity-7333486797496201216-5Z4H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ"
+    },
+     {
+      projectName: "OrbitCRM",
+      projectDesc: "A modern MERN stack Customer Relationship Management (CRM) web app designed to help businesses manage tasks, leads, clients, members, managers, departments, charts, notifications, and logs efficiently. Features include a responsive UI, secure JWT-based authentication, and REST APIs for smooth backend operations.",
+      project_languages: ["JavaScript", "Tailwind", "React", "Redux", "Node.js", "Express.js", "Mongo DB", "JWT", "Rest API'S", "Chart.js"],
+      url: "https://github.com/CodeAneeq/orbit-crm",
+      img: OrbitCRM,
+      demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-crm-fullstackdeveloper-activity-7371319856865984512-Ygtj?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ"
+    },
+     {
+      projectName: "SnapBasket",
+      projectDesc: "A MERN stack grocery delivery web app focused on fresh produce and essential groceries. Features include a responsive UI, COD and stripe option, real-time order updates, secure JWT-based authentication, and REST APIs for smooth backend operations.",
+      project_languages: ["JavaScript", "Tailwind", "React", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"],
+      url: "https://github.com/CodeAneeq/snapbasket-frontend",
+      img: SnapBasket,
+      demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-ecommerce-fullstackdeveloper-activity-7362263765918113793-9Uxw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ"
     },
      {
       projectName: "CareerHunt",
@@ -136,13 +107,15 @@ const Projects = () => {
       project_languages: ["JavaScript", "CSS", "React", "Bootstrap", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"],
       url: "https://github.com/CodeAneeq/Careerhunt-client",
       img: careerhunt,
+      demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-jobportal-reactjs-activity-7338329923834580993-V_1j?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ"
     },
      {
       projectName: "LearnCodeSkills",
       projectDesc: "LearnCodeSkills is a MERN stack Learning Management System (LMS) featuring video lectures, progress tracking, user authentication, and a clean, responsive UI. It’s built for students and instructors to learn and teach effectively.",
       project_languages: ["JavaScript", "CSS", "React", "Bootstrap", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"],
       img: LearnCodeSkills,
-      url: "https://github.com/CodeAneeq/learncodeskills-frontend"
+      url: "https://github.com/CodeAneeq/learncodeskills-frontend",
+      demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-lmsplatform-fullstackdeveloper-activity-7342698950744760322-y4n6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ"
     },
   ];
 
@@ -205,7 +178,7 @@ const Projects = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <ProjectCard url={item.url} projectName={item.projectName} projectDesc={item.projectDesc} language={item.project_languages} img={item.img} />
+                  <ProjectCard  url={item.url} projectName={item.projectName} projectDesc={item.projectDesc} language={item.project_languages} img={item.img} />
                 </motion.div>
               ))}
             {activeCategory === "Frontend" &&
@@ -241,7 +214,7 @@ const Projects = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <ProjectCard url={item.url} projectName={item.projectName} projectDesc={item.projectDesc} language={item.project_languages} img={item.img} />
+                  <ProjectCard demoURL={item.demoURL} isDemo={true} url={item.url} projectName={item.projectName} projectDesc={item.projectDesc} language={item.project_languages} img={item.img} />
                 </motion.div>
               ))}
           </div>

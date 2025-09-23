@@ -30,7 +30,7 @@ const Navbar = () => {
         <ul className={`${styles.list_container}`}>
 
         <NavLink to='/' className={ ({isActive}) => isActive ? 'activeNav nav' : 'nav' }>
-          <li>HOME</li>
+          <li>Home</li>
          </NavLink>
         <NavLink to='/projects' className={ ({isActive}) => isActive ? 'activeNav nav' : 'nav' }>
           <li>Projects</li>
