@@ -55,12 +55,6 @@ const Sidebar = () => {
             </ul>
           </div>
           <hr />
-          {/* <div className={`${styles.div}`}> */}
-
-          {/* <div className={`${styles.btn_Div}`}>
-
-          <PrimaryBtn>Download CV</PrimaryBtn>
-          </div> */}
           <div className={`${styles.btn_div}`}>
          <div onClick={toggleMode}>
           {isDark ? <span><FaMoon style={{color: 'white'}}/></span> : <span><FaSun/></span>}
