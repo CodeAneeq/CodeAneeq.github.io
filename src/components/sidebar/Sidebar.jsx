@@ -5,15 +5,15 @@ import darkLogo from '../../assets/img/logoDark.png'
 
 import SidebarContext from "../../context/sidebar-context";
 import { NavLink } from "react-router-dom";
-import logo from '../../assets/img/logo.png'
-import { useMode } from "../../context/mode-context";
-import { FaMoon, FaSun } from "react-icons/fa";
+// import logo from '../../assets/img/logo.png'
+// import { useMode } from "../../context/mode-context";
+// import { FaMoon, FaSun } from "react-icons/fa";
 import MainBtn from "../btns/mainBtn";
 
 
 const Sidebar = () => {
   const { is_sidebar, closeSidebar } = useContext(SidebarContext);
-   const { isDark, toggleMode } = useMode();
+  //  const { isDark, toggleMode } = useMode();
 
   return (
     <>
@@ -23,17 +23,14 @@ const Sidebar = () => {
           is_sidebar ? styles.active : styles.hidden
         }`}
       >
-        {/* <div className={`${styles.div}`}> */}
 
         <figure>
-            {/* <p>CODEANEEQ</p> */}
-            <img src={isDark ? darkLogo : logo} alt="" />
+            <img src={darkLogo} alt="" />
         </figure>
         <span className={styles.close_sidebar_icon} onClick={closeSidebar}>
           <RxCross1 />
         </span>
         <hr />
-        {/* </div> */}
         <div className={styles.sidebar_content_container}>
           <div className={styles.nav_link_container}>
             <ul>
@@ -56,10 +53,10 @@ const Sidebar = () => {
           </div>
           <hr />
           <div className={`${styles.btn_div}`}>
-         <div onClick={toggleMode}>
+         {/* <div onClick={toggleMode}>
           {isDark ? <span><FaMoon style={{color: 'white'}}/></span> : <span><FaSun/></span>}
           
-         </div>
+         </div> */}
          <div className={`${styles.btn}`}>
 
             <a href="Aneeq-Cv.pdf" download>
