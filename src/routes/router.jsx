@@ -1,4 +1,3 @@
-// import { createBrowserRouter } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Loader from "../components/loader/loader";
 import About from "../pages/about/about";

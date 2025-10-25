@@ -12,20 +12,30 @@ import careerhunt from '../../assets/img/landingPage/careerhunt.png'
 import Quiz from '../../assets/img/functionallity/Quiz.png';
 import Notes from '../../assets/img/functionallity/Notes.png';
 import LearnCodeSkills from '../../assets/img/LearnCodeSkills.png'
-import CodeMart from '../../assets/img/CodeMart.jpg'
+import CodeMart from '../../assets/img/CodeMart1.png'
 import OrbitCRM from '../../assets/img/orbitcrm.png'
 import SnapBasket from '../../assets/img/snapBaskett.png'
+import Estate from '../../assets/img/landingPage/Estate.jpg'
 
-import { motion } from "framer-motion"; // Import motion from framer-motion
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const landingPage = [
      {
       projectName: "Binary Chemist",
-      projectDesc: "A responsive and modern React landing page featuring Home, FAQ, and Contact sections. It integrates a real-time weather API to display current weather data for any searched location, enhancing user engagement with dynamic and useful content..",
+      projectDesc: "A responsive and modern React landing page featuring Home, FAQ, and Contact sections.",
       project_languages: ["HTML", "CSS", "JavaScript", "Bootstrap", "SCSS", "React"],
       url: 'https://binarychemist-bycodeaneeq.netlify.app/',
       img: binaryChemist,
+      bgColor: "brown"
+    },
+     {
+      projectName: "Estate",
+      projectDesc: "A responsive and modern React landing page featuring Home, Properties, and Contact sections. It helps a real estate company called Estate to showcase its listings and attract more clients.",
+      project_languages: ["HTML", "CSS", "JavaScript", "Tailwind", "React"],
+      url: 'https://estate-bycodeaneeq.netlify.app/',
+      img: Estate,
+      bgColor: "MidnightBlue"
     },
   ];
 
@@ -36,6 +46,7 @@ const Projects = () => {
       project_languages: ["JavaScript", "CSS", "React", "Bootstrap", "SCSS", "Redux"],
       url: "https://book-heavenbycodeaneeq.netlify.app/",
       img: BookHeaven,
+      bgColor: "lightpink"
     },
      {
       projectName: "Weather",
@@ -43,38 +54,39 @@ const Projects = () => {
       project_languages: ["HTML", "CSS", "JavaScript", "Bootstrap", "SCSS", "React"],
       url: "https://weatherappbycodeaneeq.netlify.app/",
       img: Weather,
+      bgColor: "black"
     },
   ];
 
-  const functionalityProject = [
-    {
-      projectName: "Todo List",
-      projectDesc: "A task management app that allows users to add, remove, and check off tasks from their to-do list.",
-      project_languages: ["HTML", "CSS", "JavaScript", "Bootstrap", "SCSS"],
-      img: Todo,
-    },
-    {
-      projectName: "Expense Tracker",
-      projectDesc: "An app to track personal expenses, categorize them, and visualize the spending habits.",
-      project_languages: ["HTML", "CSS", "JavaScript", "Bootstrap", "SCSS"],
-      url: "https://expensetracker-bycodeaneeq.netlify.app/",
-      img: Expense,
-    },
-    {
-      projectName: "Quiz App",
-      projectDesc: "A quiz application that lets users take a quiz, tracks their score, and displays results.",
-      project_languages: ["HTML", "CSS", "JavaScript", "Bootstrap", "SCSS"],
-      url: "https://quiz-bycodeaneeq.netlify.app/",
-      img: Quiz,
-    },
-    {
-      projectName: "Notes",
-      projectDesc: "A note-taking app that allows users to write, edit, and delete notes.",
-      project_languages: ["HTML", "CSS", "JavaScript", "Bootstrap", "SCSS"],
-      url: "https://notes-app-by-codeaneeq.netlify.app/",
-      img: Notes,
-    },
-  ];
+  // const functionalityProject = [
+  //   {
+  //     projectName: "Todo List",
+  //     projectDesc: "A task management app that allows users to add, remove, and check off tasks from their to-do list.",
+  //     project_languages: ["HTML", "CSS", "JavaScript", "Bootstrap", "SCSS"],
+  //     img: Todo,
+  //   },
+  //   {
+  //     projectName: "Expense Tracker",
+  //     projectDesc: "An app to track personal expenses, categorize them, and visualize the spending habits.",
+  //     project_languages: ["HTML", "CSS", "JavaScript", "Bootstrap", "SCSS"],
+  //     url: "https://expensetracker-bycodeaneeq.netlify.app/",
+  //     img: Expense,
+  //   },
+  //   {
+  //     projectName: "Quiz App",
+  //     projectDesc: "A quiz application that lets users take a quiz, tracks their score, and displays results.",
+  //     project_languages: ["HTML", "CSS", "JavaScript", "Bootstrap", "SCSS"],
+  //     url: "https://quiz-bycodeaneeq.netlify.app/",
+  //     img: Quiz,
+  //   },
+  //   {
+  //     projectName: "Notes",
+  //     projectDesc: "A note-taking app that allows users to write, edit, and delete notes.",
+  //     project_languages: ["HTML", "CSS", "JavaScript", "Bootstrap", "SCSS"],
+  //     url: "https://notes-app-by-codeaneeq.netlify.app/",
+  //     img: Notes,
+  //   },
+  // ];
 
   const mernProject = [
      {
@@ -83,7 +95,8 @@ const Projects = () => {
       project_languages: ["JavaScript", "CSS", "React", "Bootstrap", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"],
       url: "https://github.com/CodeAneeq/Codemart-frontend",
       img: CodeMart,
-      demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-ecommerceapp-fullstackdeveloper-activity-7333486797496201216-5Z4H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ"
+      demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-ecommerceapp-fullstackdeveloper-activity-7333486797496201216-5Z4H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ",
+      bgColor: "lightblue"
     },
      {
       projectName: "OrbitCRM",
@@ -91,7 +104,8 @@ const Projects = () => {
       project_languages: ["JavaScript", "Tailwind", "React", "Redux", "Node.js", "Express.js", "Mongo DB", "JWT", "Rest API'S", "Chart.js"],
       url: "https://github.com/CodeAneeq/orbit-crm",
       img: OrbitCRM,
-      demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-crm-fullstackdeveloper-activity-7371319856865984512-Ygtj?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ"
+      demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-crm-fullstackdeveloper-activity-7371319856865984512-Ygtj?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ",
+      bgColor: "white"
     },
      {
       projectName: "SnapBasket",
@@ -99,7 +113,8 @@ const Projects = () => {
       project_languages: ["JavaScript", "Tailwind", "React", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"],
       url: "https://github.com/CodeAneeq/snapbasket-frontend",
       img: SnapBasket,
-      demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-ecommerce-fullstackdeveloper-activity-7362263765918113793-9Uxw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ"
+      demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-ecommerce-fullstackdeveloper-activity-7362263765918113793-9Uxw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ",
+      bgColor: "lightgreen"
     },
      {
       projectName: "CareerHunt",
@@ -107,7 +122,8 @@ const Projects = () => {
       project_languages: ["JavaScript", "CSS", "React", "Bootstrap", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"],
       url: "https://github.com/CodeAneeq/Careerhunt-client",
       img: careerhunt,
-      demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-jobportal-reactjs-activity-7338329923834580993-V_1j?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ"
+      demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-jobportal-reactjs-activity-7338329923834580993-V_1j?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ",
+      bgColor: "white"
     },
      {
       projectName: "LearnCodeSkills",
@@ -115,7 +131,8 @@ const Projects = () => {
       project_languages: ["JavaScript", "CSS", "React", "Bootstrap", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"],
       img: LearnCodeSkills,
       url: "https://github.com/CodeAneeq/learncodeskills-frontend",
-      demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-lmsplatform-fullstackdeveloper-activity-7342698950744760322-y4n6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ"
+      demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-lmsplatform-fullstackdeveloper-activity-7342698950744760322-y4n6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ",
+      bgColor: "lightblue"
     },
   ];
 
@@ -131,6 +148,8 @@ const Projects = () => {
     if (savedCategory) {
       setActiveCategory(savedCategory);
     }
+
+    document.title = "Projects By CodeAneeq"
   }, []);
 
   return (
@@ -159,12 +178,12 @@ const Projects = () => {
             >
               Mern Stack
             </li>
-            <li
+            {/* <li
               className={`${styles.last_li} ${activeCategory === "Functionality" ? styles.active : ""}`}
               onClick={() => handleCategoryClick("Functionality")}
             >
               Functionality
-            </li>
+            </li> */}
           </ul>
 
           {/* Conditional rendering based on activeCategory */}
@@ -178,7 +197,7 @@ const Projects = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <ProjectCard  url={item.url} projectName={item.projectName} projectDesc={item.projectDesc} language={item.project_languages} img={item.img} />
+                  <ProjectCard  url={item.url} projectName={item.projectName} projectDesc={item.projectDesc} language={item.project_languages} img={item.img} style={{backgroundColor: item.bgColor}} />
                 </motion.div>
               ))}
             {activeCategory === "Frontend" &&
@@ -188,12 +207,12 @@ const Projects = () => {
                   className={`${styles.project_card_div}`}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5 }}
+                  transition={{ duration: 0.5 }} 
                 >
-                  <ProjectCard url={item.url} projectName={item.projectName} projectDesc={item.projectDesc} language={item.project_languages} img={item.img} />
+                  <ProjectCard style={{backgroundColor: item.bgColor}} url={item.url} projectName={item.projectName} projectDesc={item.projectDesc} language={item.project_languages} img={item.img} />
                 </motion.div>
               ))}
-            {activeCategory === "Functionality" &&
+            {/* {activeCategory === "Functionality" &&
               functionalityProject.map((item, i) => (
                 <motion.div 
                   key={i} 
@@ -204,7 +223,7 @@ const Projects = () => {
                 >
                   <ProjectCard url={item.url} projectName={item.projectName} projectDesc={item.projectDesc} language={item.project_languages} img={item.img} />
                 </motion.div>
-              ))}
+              ))} */}
             {activeCategory === "Mern Stack" &&
               mernProject.map((item, i) => (
                 <motion.div 
@@ -214,7 +233,7 @@ const Projects = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <ProjectCard demoURL={item.demoURL} isDemo={true} url={item.url} projectName={item.projectName} projectDesc={item.projectDesc} language={item.project_languages} img={item.img} />
+                  <ProjectCard demoURL={item.demoURL} isDemo={true} url={item.url} projectName={item.projectName} projectDesc={item.projectDesc} language={item.project_languages} img={item.img} style={{backgroundColor: item.bgColor}}/>
                 </motion.div>
               ))}
           </div>

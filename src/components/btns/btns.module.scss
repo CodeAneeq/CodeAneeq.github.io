@@ -1,6 +1,6 @@
 @import '../../theme.scss';
 
-.btn {
+.btn1 {
   height: 100%;
   width: 95%;
   border-radius: 15px;
@@ -19,4 +19,46 @@
     background-color: transparent;
     border: 1px solid var(--btnBg);
   }
+}
+
+
+// ViewMoreButton.scss
+/* From Uiverse.io by CristianMontoya98 */ 
+.btn {
+ width: 95%;
+ height: 2em;
+ margin: 0.5em;
+ background: var(--btnBg);
+ color: var(--sectionBg);
+ border: none;
+ border-radius: 0.625em;
+ font-size: 18px;
+ font-weight: 500;
+ cursor: pointer;
+ position: relative;
+ z-index: 1;
+ overflow: hidden;
+}
+
+button:hover {
+ color: var(--btnBg);
+}
+
+button:after {
+ content: "";
+ background: var(--sectionBg);
+ position: absolute;
+ z-index: -1;
+ left: -20%;
+ right: -20%;
+ top: 0;
+ bottom: 0;
+ transform: skewX(-45deg) scale(0, 1);
+ transition: all 0.5s;
+}
+
+button:hover:after {
+ transform: skewX(-45deg) scale(1, 1);
+ -webkit-transition: all 0.5s;
+ transition: all 0.5s;
 }

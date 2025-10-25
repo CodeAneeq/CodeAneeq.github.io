@@ -5,26 +5,32 @@
   "homepage": "https://CodeAneeq.github.io/codeaneeq/",
   "type": "module",
   "scripts": {
-   "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-},
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@tailwindcss/vite": "^4.1.16",
     "axios": "^1.10.0",
     "bootstrap": "^5.3.3",
     "framer-motion": "^12.0.6",
     "hash-loader": "^1.0.0",
     "motion": "^12.0.3",
+    "ogl": "^1.0.11",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.1.2",
     "react-spinners": "^0.15.0",
+    "react-tsparticles": "^2.12.2",
     "sass": "^1.83.4",
-    "swiper": "^11.2.1"
+    "swiper": "^11.2.1",
+    "tailwindcss": "^4.1.16",
+    "three": "^0.180.0",
+    "tsparticles": "^3.9.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

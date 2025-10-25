@@ -1,20 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Navbar from "../../components/navbar/Navbar";
 import BasicLayout from "../../components/layout/basicLayout";
-import contact from "../../assets/img/contactVectorRee.png";
 import CategoryName from "../../components/category/CategoryName";
 import styles from "./contact.module.scss";
 import Input from "../../components/input/input";
-import PrimaryBtn from "../../components/btns/primaryBtn";
 import TextField from "../../components/input/TextField";
 import { Helper } from "../../helpers/helper";
 import hero from "../../assets/img/Hero.png";
 import { FaUser } from "react-icons/fa";
 import { MdEmail, MdOutlineMessage, MdOutlineSubject } from "react-icons/md";
 import { motion } from "framer-motion";
-import { FaMessage } from "react-icons/fa6";
 import Toast from "../../components/toast/Toast";
+import MainBtn from "../../components/btns/mainBtn.jsx";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
@@ -31,13 +28,17 @@ const Contact = () => {
     visible: { opacity: 1, y: 0 },
   };
 
+  useEffect(() => {
+    document.title = "Contact CodeAneeq"
+  }, [])
+
   const sendMail = (e) => {
     e.preventDefault();
     setLoading(true);
 
-    const serviceId = "service_6dei6hf";
+    const serviceId = "service_2hf54bf";
     const templateId = "template_cbvufob";
-    const publicKey = "v1Udh79oExzgHJPJb";
+    const publicKey = "_oW93TbwIqydexV5e";
 
     const templateParams = {
       from_name: name,
@@ -150,13 +151,13 @@ const Contact = () => {
 
                 <div className={styles.btns}>
                   <div className={styles.btn_div}>
-                    <PrimaryBtn
+                    <MainBtn
                       loading={loading}
                       disabled={loading}
                       type="submit"
                     >
                       Send Message <MdOutlineMessage />
-                    </PrimaryBtn>
+                    </MainBtn>
                   </div>
                 </div>
 

@@ -4,11 +4,11 @@ import { RxCross1 } from "react-icons/rx";
 import darkLogo from '../../assets/img/logoDark.png'
 
 import SidebarContext from "../../context/sidebar-context";
-import PrimaryBtn from "../btns/primaryBtn";
 import { NavLink } from "react-router-dom";
 import logo from '../../assets/img/logo.png'
 import { useMode } from "../../context/mode-context";
 import { FaMoon, FaSun } from "react-icons/fa";
+import MainBtn from "../btns/mainBtn";
 
 
 const Sidebar = () => {
@@ -63,7 +63,7 @@ const Sidebar = () => {
          <div className={`${styles.btn}`}>
 
             <a href="Aneeq-Cv.pdf" download>
-            <PrimaryBtn>Download CV</PrimaryBtn>
+            <MainBtn>Download CV</MainBtn>
             </a>
          </div>
           </div>

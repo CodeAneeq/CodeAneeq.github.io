@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './cards.module.scss'
 import CategoryName from '../category/CategoryName'
 import { FiExternalLink } from "react-icons/fi";
-import { FiPlay } from "react-icons/fi"; // Play icon for demo button
+import { FiPlay } from "react-icons/fi"; 
 
 const ProjectCard = (props) => {
   return (
@@ -35,7 +35,7 @@ const ProjectCard = (props) => {
             </div>
           </div>
         </div>
-        <figure className={`${styles.project_figure}`}>
+        <figure className={`${styles.project_figure}`} style={props.style}>
             <img src={props.img} />
         </figure>
     </div>

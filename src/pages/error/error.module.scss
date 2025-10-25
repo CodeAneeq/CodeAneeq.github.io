@@ -10,10 +10,11 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        color: gray;
 
         h1{
             font-size: 110px;
-            color: var(--dark);
+            color: white;
             margin-bottom: 30px;
 
             @media screen and (max-width: 1000px) {
@@ -31,7 +32,7 @@
         }
 
         .btn_div{
-            margin-top: 50px;
+            margin-top: 30px;
             width: 250px;
         }
     }

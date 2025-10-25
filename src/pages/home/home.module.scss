@@ -47,15 +47,16 @@
         }
       }
 
-      &::before {
-        left: 0;
-        background: linear-gradient(to right, var(--gradient));
-      }
+      
+//    &::before {
+//   left: 0;
+//   background: linear-gradient(to right, rgba(231, 229, 232, 1), rgba(231, 229, 232, 0));;
+// }
 
-      &::after {
-        right: 0;
-        background: linear-gradient(to left, var(--gradient));
-      }
+//    &::after {
+//   right: 0;
+//   background: linear-gradient(to left, rgba(231, 229, 232, 1), rgba(231, 229, 232, 0));
+// }
     }
 
     .skills_track {

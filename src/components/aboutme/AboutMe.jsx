@@ -1,16 +1,12 @@
 import React from 'react'
 import styles from './aboutme.module.scss'
-import aneeq from '../../assets/img/aneeq.png'
-// import aneeqDark from '../../assets/img/aneeqDark.png'
-import aneeqDark from '../../assets/img/aneeqDark.png'
-import { useMode } from '../../context/mode-context'
 
-const AboutMe = () => {
-  const { isDark } = useMode();
+const AboutMe = ({style, aneeqDark, aneeq}) => {
+
   return (
-    <div className={`${styles.about_me_container}`}>
+    <div className={`${styles.about_me_container}`} style={style}>
         <figure className={`${styles.aneeq_figure}`}>
-            <img src={isDark ? aneeqDark : aneeq} alt="" />
+            <img src={aneeqDark} alt="" />
         </figure>
         <div className={`${styles.about_content}`}>
             <h3>Curious About Me? Here you have it:</h3>

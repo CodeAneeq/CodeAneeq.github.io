@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "../../components/hero/hero";
 import BasicLayout from "../../components/layout/basicLayout";
 import styles from "./home.module.scss";
 import CategoryName from "../../components/category/CategoryName";
 import SkillCard from "../../components/cards/skillCard";
-import codeMart from '../../assets/img/CodeMart.jpg'
+import codeMart from '../../assets/img/CodeMart1.png'
+import aneeq from '../../assets/img/aneeq.png'
+import aneeqDark from '../../assets/img/aneeqDark.png'
 
 import Js from "../../assets/img/JS.svg";
 import NodeJs from "../../assets/img/NodeJs.svg";
@@ -23,15 +25,15 @@ import WooCommerce from "../../assets/img/Woo.png";
 import Tailwand from "../../assets/img/Tailwand.svg";
 import Figma from "../../assets/img/Figma.webp";
 import Service from "../../components/servicesComponent/Service";
-import PrimaryBtn from "../../components/btns/primaryBtn";
 import ProjectCard from "../../components/cards/projectCard";
 
 import AboutMe from "../../components/aboutme/AboutMe";
 import TestonimalSlider from "../../components/testonimals/TestonimalSlider";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion"; // Import motion from framer-motion
+import { motion } from "framer-motion"; 
 import { FaCode } from "react-icons/fa";
 import { MdMobileScreenShare } from "react-icons/md";
+import MainBtn from "../../components/btns/mainBtn";
 
 const Home = () => {
   const skillsOBJ = [
@@ -64,6 +66,10 @@ const Home = () => {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { opacity: 1, scale: 1 },
   };
+
+   useEffect(() => {
+      document.title = "CodeAneeq - Where Ideas meet execution"
+    }, [])
 
   return (
     <div>
@@ -131,9 +137,14 @@ const Home = () => {
                     "We create robust and scalable backends handling user authentication, database management, and custom APIs to power high-performing web apps."}
                 />
               </div>
-              <div className={`${styles.btn_Div}`}>
+              {/* <div className={`${styles.btn_Div}`}>
                 <div className={`${styles.ser_btn}`}>
                   <Link to='/services'><PrimaryBtn>View More</PrimaryBtn></Link>
+                </div>
+              </div> */}
+              <div className={`${styles.btn_Div}`}>
+                <div className={`${styles.ser_btn}`}>
+                  <Link to='/services'><MainBtn>View More</MainBtn></Link>
                 </div>
               </div>
             </div>
@@ -165,13 +176,12 @@ const Home = () => {
                   demoURL={"https://www.linkedin.com/posts/codeaneeq_mernstack-ecommerceapp-fullstackdeveloper-activity-7333486797496201216-5Z4H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ"}
                   isDemo={true}
                   img={codeMart}
+                  style={{backgroundColor: "lightblue"}}
                 />
                 {/* Repeat ProjectCard as needed */}
                 <div className={`${styles.btn_Div}`}>
                   <div className={`${styles.ser_btn}`}>
-                    <Link to='/projects'>
-                      <PrimaryBtn>View More</PrimaryBtn>
-                    </Link>
+                    <Link to='/projects'><MainBtn>View More</MainBtn></Link>
                   </div>
                 </div>
               </div>
@@ -189,7 +199,7 @@ const Home = () => {
             <div className="container">
               <CategoryName category={"About Me"} />
               <div className={`${styles.about_card}`}>
-                <AboutMe />
+                <AboutMe aneeqDark={aneeqDark} />
               </div>
             </div>
           </motion.div>

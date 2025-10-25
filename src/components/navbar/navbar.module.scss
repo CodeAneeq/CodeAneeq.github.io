@@ -20,11 +20,11 @@
     margin-bottom: 0;
 
     > img {
-      height: 60px;
+      height: 40px;
 
-      @media (max-width: 900px) {
-        height: 40px;
-      }
+      // @media (max-width: 900px) {
+      //   height: 40px;
+      // }
     }
   }
 
@@ -34,12 +34,13 @@
     width: 55%;
     font-weight: 500;
     list-style-type: none;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
     justify-content: end;
     font-family: 'Inter';
+    margin-top: 15px;
     font-size: 16px;
-
+    
     > div {
       width: 150px;
     }
@@ -50,7 +51,7 @@
 
     @media (max-width: 1352px) {
       width: 80%;
-      font-size: 20px;
+      // font-size: 20px;
     }
 
     @media (max-width: 1200px) {
@@ -72,8 +73,9 @@
 
     .btn_div {
       display: flex;
-      width: 100%;
+      width: 30%;
       gap: 30px;
+      justify-items: end;
       align-items: center;
 
       .moon{
@@ -81,7 +83,13 @@
       }
 
       .btn {
+        // display: flex;
+        // flex-direction: row;
         width: 100%;
+      }
+
+      @media (max-width: 1000px) {
+        width: 50%;
       }
     }
   }
