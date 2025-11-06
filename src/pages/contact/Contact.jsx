@@ -155,8 +155,9 @@ const Contact = () => {
                       loading={loading}
                       disabled={loading}
                       type="submit"
+                      style={{display: "flex", justifyContent: "center", alignItems: "center", gap: "8px"}}
                     >
-                      Send Message <MdOutlineMessage />
+                     Send Message <MdOutlineMessage />
                     </MainBtn>
                   </div>
                 </div>

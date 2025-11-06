@@ -3,7 +3,7 @@ import styles from "./navbar.module.scss";
 import logo from '../../assets/img/logo.png'
 import darkLogo from '../../assets/img/logoDark.png'
 import SidebarContext from "../../context/sidebar-context";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { FaSun } from "react-icons/fa";
 import { FaMoon } from "react-icons/fa6";
 // import { useMode } from "../../context/mode-context";
@@ -11,14 +11,14 @@ import MainBtn from "../btns/mainBtn";
 
 const Navbar = () => {
   const {openSidebar} = useContext(SidebarContext);
+  const navigate = useNavigate();
   // const { isDark, toggleMode } = useMode();
 
   return (
     <div className="container">
       <div className={`${styles.navbar_container}`}>
         <figure>
-          <img src={darkLogo} alt="" />
-          {/* <h2>Codeaneeq</h2> */}
+          <img src={darkLogo} alt="" onClick={() => navigate("/")}/>
         </figure>
 
         <div className={styles.hamburger} onClick={openSidebar}>

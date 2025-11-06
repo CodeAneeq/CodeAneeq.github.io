@@ -93,7 +93,7 @@ const Projects = () => {
       projectName: "CodeMart",
       projectDesc: "A modern MERN stack e-commerce web app offering a wide range of mobile phones, headphones, and tech gadgets. Features include a sleek, responsive UI, JWT-based authentication, and REST APIs for smooth backend operations.",
       project_languages: ["JavaScript", "CSS", "React", "Bootstrap", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"],
-      url: "https://github.com/CodeAneeq/Codemart-frontend",
+      url: "https://codemart.netlify.app",
       img: CodeMart,
       demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-ecommerceapp-fullstackdeveloper-activity-7333486797496201216-5Z4H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ",
       bgColor: "lightblue"
@@ -111,7 +111,7 @@ const Projects = () => {
       projectName: "SnapBasket",
       projectDesc: "A MERN stack grocery delivery web app focused on fresh produce and essential groceries. Features include a responsive UI, COD and stripe option, real-time order updates, secure JWT-based authentication, and REST APIs for smooth backend operations.",
       project_languages: ["JavaScript", "Tailwind", "React", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"],
-      url: "https://github.com/CodeAneeq/snapbasket-frontend",
+      url: "https://snapbasket.netlify.app/",
       img: SnapBasket,
       demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-ecommerce-fullstackdeveloper-activity-7362263765918113793-9Uxw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ",
       bgColor: "lightgreen"
@@ -120,7 +120,7 @@ const Projects = () => {
       projectName: "CareerHunt",
       projectDesc: "CareerHunt is a full-stack MERN job portal featuring a clean UI, real-time job listings, user authentication, and smooth navigation. The platform allows developers and recruiters to easily post and apply for jobs.",
       project_languages: ["JavaScript", "CSS", "React", "Bootstrap", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"],
-      url: "https://github.com/CodeAneeq/Careerhunt-client",
+      url: "https://careeer-hunt.netlify.app",
       img: careerhunt,
       demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-jobportal-reactjs-activity-7338329923834580993-V_1j?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ",
       bgColor: "white"
