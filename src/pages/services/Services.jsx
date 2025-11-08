@@ -48,7 +48,7 @@ const Services = () => {
 ];
 
 useEffect(() => {
-  document.title = "Services By CodeAneeq"
+  document.title = "My Services | Web Developer in Pakistan - CodeAneeq"
 }, [])
 
 

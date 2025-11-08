@@ -149,7 +149,7 @@ const Projects = () => {
       setActiveCategory(savedCategory);
     }
 
-    document.title = "Projects By CodeAneeq"
+    document.title = "My Projects | Web Developer in Pakistan - CodeAneeq"
   }, []);
 
   return (

@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   useEffect(() => {
-    document.title = "Contact CodeAneeq"
+    document.title = "Hire Aneeq | Web Developer in Pakistan - CodeAneeq"
   }, [])
 
   const sendMail = (e) => {

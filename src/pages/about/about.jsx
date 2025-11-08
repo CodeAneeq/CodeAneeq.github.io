@@ -14,7 +14,7 @@ const About = () => {
   };
 
   useEffect(() => {
-    document.title = "About Us - CodeAneeq"
+    document.title = "About Me | Web Developer in Pakistan - CodeAneeq"
   }, [])
 
   return (

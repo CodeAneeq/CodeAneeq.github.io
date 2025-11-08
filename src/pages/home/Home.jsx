@@ -68,7 +68,7 @@ const Home = () => {
   };
 
    useEffect(() => {
-      document.title = "CodeAneeq - Where Ideas meet execution"
+      document.title = "Web Developer in Pakistan | Freelance Full Stack Developer - CodeAneeq"
     }, [])
 
   return (
