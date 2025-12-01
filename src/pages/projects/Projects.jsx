@@ -91,8 +91,8 @@ const Projects = () => {
   const mernProject = [
      {
       projectName: "CodeMart",
-      projectDesc: "A modern MERN stack e-commerce web app offering a wide range of mobile phones, headphones, and tech gadgets. Features include a sleek, responsive UI, JWT-based authentication, and REST APIs for smooth backend operations.",
-      project_languages: ["JavaScript", "CSS", "React", "Bootstrap", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"],
+      projectDesc:"A modern MERN stack e-commerce web app offering a wide range of mobile phones, headphones, and tech gadgets. It Includes a complete shopping and admin experience similar to real online stores.",
+      project_languages:["React.js", "Node.js", "MongoDB", "User authentication", "Product & Category CRUD", "Cart & Wishlist system", "Stripe payment", "Admin / User dashboards", "Cloudinary image uploads"],
       url: "https://codemart.netlify.app",
       img: CodeMart,
       demoURL: "https://www.linkedin.com/posts/codeaneeq_mernstack-ecommerceapp-fullstackdeveloper-activity-7333486797496201216-5Z4H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ",
@@ -100,7 +100,7 @@ const Projects = () => {
     },
      {
       projectName: "OrbitCRM",
-      projectDesc: "A modern MERN stack Customer Relationship Management (CRM) web app designed to help businesses manage tasks, leads, clients, members, managers, departments, charts, notifications, and logs efficiently. Features include a responsive UI, secure JWT-based authentication, and REST APIs for smooth backend operations.",
+      projectDesc: "A modern MERN stack Customer Relationship Management (CRM) web app designed to help businesses manage tasks, leads, clients, members, managers, departments, charts, notifications, and logs efficiently. Features include a responsive UI, RBAC, secure JWT-based authentication, and REST APIs for smooth backend operations.",
       project_languages: ["JavaScript", "Tailwind", "React", "Redux", "Node.js", "Express.js", "Mongo DB", "JWT", "Rest API'S", "Chart.js"],
       url: "https://github.com/CodeAneeq/orbit-crm",
       img: OrbitCRM,
@@ -109,7 +109,7 @@ const Projects = () => {
     },
      {
       projectName: "SnapBasket",
-      projectDesc: "A MERN stack grocery delivery web app focused on fresh produce and essential groceries. Features include a responsive UI, COD and stripe option, real-time order updates, secure JWT-based authentication, and REST APIs for smooth backend operations.",
+      projectDesc: "A MERN stack grocery delivery web app focused on fresh produce and essential groceries. Features include a Product & Category management, COD and stripe option, real-time order updates, secure JWT-based authentication, Cart + checkout and Admin panel.",
       project_languages: ["JavaScript", "Tailwind", "React", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"],
       url: "https://snapbasket.netlify.app/",
       img: SnapBasket,
@@ -118,7 +118,8 @@ const Projects = () => {
     },
      {
       projectName: "CareerHunt",
-      projectDesc: "CareerHunt is a full-stack MERN job portal featuring a clean UI, real-time job listings, user authentication, and smooth navigation. The platform allows developers and recruiters to easily post and apply for jobs.",
+      projectDesc: `CareerHunt is a full-stack MERN job portal featuring a clean UI, real-time job listings, user authentication, and smooth navigation. The platform allows developers and recruiters to easily post and apply for jobs. 
+      Features Include Student & Recruiter login, Job + Company CRUD, Apply, accept or reject applicants, Resume Upload and Profile Management`,
       project_languages: ["JavaScript", "CSS", "React", "Bootstrap", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"],
       url: "https://careeer-hunt.netlify.app",
       img: careerhunt,

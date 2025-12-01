@@ -169,9 +169,9 @@ const Home = () => {
                   className={styles.rev}
                   projectName={"CodeMart"}
                   projectDesc={
-                    "A modern MERN stack e-commerce web app offering a wide range of mobile phones, headphones, and tech gadgets. Features include a sleek, responsive UI, JWT-based authentication, and REST APIs for smooth backend operations."
+                    "A modern MERN stack e-commerce web app offering a wide range of mobile phones, headphones, and tech gadgets. It Includes a complete shopping and admin experience similar to real online stores."
                   }
-                  language={["JavaScript", "CSS", "React", "Bootstrap", "SCSS", "Redux", "Node.js", "Express.js", "Mongo Db", "JWT", "Rest API'S"]}
+                  language={["React.js", "Node.js", "MongoDB", "User authentication", "Product & Category CRUD", "Cart & Wishlist system", "Stripe payment", "Admin / User dashboards", "Cloudinary image uploads"]}
                   url={"https://codemart.netlify.app"}
                   demoURL={"https://www.linkedin.com/posts/codeaneeq_mernstack-ecommerceapp-fullstackdeveloper-activity-7333486797496201216-5Z4H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuPPiYBNcZK5UNqz6fAMCCNsRoHV_lJUsQ"}
                   isDemo={true}
